@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Boostrap/Boostrap/css/bootstrap.css">
+   <link rel="stylesheet" href="../Registros/Estilo_Registros.css">
+    <title>Registro de profesores</title>
+</head>
+<body id="cuerpo">
+  <a href="../Pagina_Principal/Observador.html"> <img src="../Imágenes/Login/Foto_Colegio.png" alt=""></a>
+    <h1> Registro de los docentes</h1>
+    <article class="container">
+    <form action="Registro_Docente.php" method="post"> 
+        
+            <div class="row">
+                <div class="col-sm-4">
+       <label for="">Codigo del Docente</label> <input type="text" name="Cod_Docente" class="form-control input-sm">
+    </div>
+            <div class="col-sm-4">
+       <label for="">Primer apellido</label> <input type="text" name="Ape1" class="form-control input-sm">
+    </div>
+    <div class="col-sm-4">
+       <label for="">Segundo apellido</label> <input type="text" name="Ape2" class="form-control input-sm">
+    </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-4">
+       <label for="">Primer nombre</label> <input type="text"name="Nom1" class="form-control input-sm">
+    </div>
+    <div class="col-sm-4"> 
+       <label for="">Segundo nombre</label><input type="text" name="Nom2" class="form-control input-sm">
+    </div>
+    <div class="col-sm-4">  
+       <label for="">Fecha de nacimiento</label> <input type="date" name="Fecha_Nac" class="form-control input-sm">
+    </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-4">
+       <label for="">RH</label> <input type="text" name="RH"class="form-control input-sm">
+    </div>
+
+    <div class="col-sm-4">
+       <label for="">Asignatura</label> <input type="text" name="Asig" class="form-control input-sm">
+    </div>
+    <div class="col-sm-4">
+       <label for="">Area</label> <input type="text" name="Area" class="form-control input-sm">
+    </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-sm-4 mx-auto">
+       <label for="">Jornada</label> <input type="text" name="Jornada" class="form-control input-sm">
+    </div>
+    
+        <div class="col-sm-4 mx-auto">
+       <label for="">Email</label> <input type="email" name="Email" class="form-control input-sm">
+    </div>
+
+    </div>
+    <button type="submit" class="btn btn-primary btn-lg">Registrar Profesor</button>
+
+</article>
+    </form>
+</body>
+</html>

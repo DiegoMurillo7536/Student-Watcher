@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Boostrap/Boostrap/css/bootstrap.css">
+    <link rel="stylesheet" href="Observador.css">
+    <title>Observación</title>
+</head>
+<body>
+     <header><a href="../Pagina_Principal/Observador.html"><h1>Observador</h1></a></header>
+     <a href="../Pagina_Principal/Observador.html"><img src="../Imágenes/Login/Foto_Colegio.png" alt=""></a>
+     <section class="container">
+     <h2>Observación del Estudiante </h2>
+    <form action="Observador.php" method="post">
+        <div class="row">
+            <div class="col-sm-6 mx-auto">
+        <label for="">Identificación del Estudiante</label> <input type="text" name="Estudiante" minlength="3" maxlength="10" required pattern="['0-9']+" class="form-control input-sm">
+              </div>
+              <div class="col-sm-6 mx-auto">
+        <label for="">Identificación del Docente </label><input type="text" name="Docente"  minlength="3" maxlength="10" required pattern="['0-9']+"  class="form-control input-sm"> <br> <br>
+              </div>
+    </div>
+
+        <div class="row">
+            <div class="col-sm-4">
+        <label for="">Periodo</label> <input type="number" name="Periodo"  min="1" max="4" required class="form-control input-sm">
+            </div>
+            <div class="col-sm-4">
+        <label for="">Inasistencias</label> <input type="number" name="Inasistencias"  min="1" max="40" required class="form-control input-sm">
+            </div>
+            <div class="col-sm-4">
+         <label for="">Materias perdidas</label><input type="number" name="Perdidas" min="1" max="13" required class="form-control input-sm">
+            </div>
+        </div>
+     <br> <br>
+        <div class="row">
+            <div class="col-sm-6">
+        <label for="">Valor Compromiso</label> <br><textarea name="VCompromiso" cols="50" rows="10" required class="form-control"></textarea>
+    </div>
+            <div class="col-sm-6">
+        Compromiso: <br><textarea name="Compromiso" cols="50" rows="10" required class="form-control"></textarea>
+            </div>
+        </div> <br>
+        <button type="submit"  class="btn btn-primary btn-lg">Subir Observación</button> <br> <br>
+    </form>
+</section>
+
+</body>
+</html>

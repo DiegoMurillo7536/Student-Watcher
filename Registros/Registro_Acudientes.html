@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Boostrap/Boostrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../Registros/Estilo_Registros.css">
+    <title>Registro de acudientes</title>
+</head>
+<body id="cuerpo">
+   <a href="../Pagina_Principal/Observador.html"><img src="../Imágenes/Login/Foto_Colegio.png" alt="Foto_Colegio"></a>  
+    <h1>Datos del Acudiente</h1>
+     <!-- Datos del Acudiente--> 
+     <article class="container">
+        <h2>Acudiente</h2>
+<form action="Registro_Acudientes.php" method="post">
+        <div class="row">
+            <div class="col-sm-4 ">
+       <label for=""> Identificacion</label> <input type="text" name="Identificacion_Acudiente" class="form-control input-sm"> 
+    </div>
+    
+    <div class="col-sm-4 ">
+        <label for="">Primer nombre</label> <input type="text"name="Noma1" class="form-control input-sm">
+    </div>
+
+    <div class="col-sm-4">
+        <label for="">Segundo nombre</label> <input type="text"name="Noma2" class="form-control input-sm">
+    </div>
+    </div> 
+
+    <div class="row">
+        <div class="col-sm-4">
+        <label for="">Primer apellido</label><input type="text"name="Apa1" class="form-control input-sm">
+    </div>
+
+    <div class="col-sm-4">
+        <label for="">Segundo apellido</label><input type="text"name="Apa2" class="form-control input-sm">
+    </div>
+
+    <div class="col-sm-4">
+        Parentezco: <input type="text" name="Parentezco" class="form-control input-sm">
+    </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-4">
+        <label for="">Telefono Celular</label> <input type="text" name="Celular" class="form-control input-sm"> 
+    </div>
+
+        <div class="col-sm-4">
+        <label for="">Correo electrónico</label> <input type="email" name="Email"  class="form-control input-sm"> 
+    </div>
+        <div class="col-sm-4">
+       <label for="">Firma</label> <input type="file" name="Firma" class="form-control input-sm">
+    </div>
+        <div class="col-sm-6 mx-auto"> <br>
+    <button type="submit" class="btn btn-primary btn-lg">Finalizar Registro</button>
+</div> <br>
+
+    </div>
+</form>
+    </article> 
+</body>
+</html>

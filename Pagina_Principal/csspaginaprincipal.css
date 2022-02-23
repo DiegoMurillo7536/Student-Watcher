@@ -1,0 +1,92 @@
+
+#uno{
+    background-color: lightseagreen;
+    width: 870px;
+    height: 180px;
+    margin-left: 26%;
+    text-align: center;
+    font-size: 40px;
+    border: solid black;
+    padding-bottom: 35%;
+    opacity: 75%;
+    border-radius: 10px;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-top: 3%;
+    padding-top: 1%;
+    background-image: url("../Imágenes/Login/Foto_Colegio.png");
+    background-size: 12%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+#dos{
+    background-color: rgb(168, 165, 165);
+    border: black solid;
+    border-radius: 10px;
+    padding-left:4%;
+   
+}
+#tres{
+    font-size: 60px;
+    border-radius: 1000000px;
+    margin-top: 2%;
+}
+
+
+
+#cuerpo {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    background-image: url("../Imágenes/Index/Colegio.jpg");
+    background-size: 120%;
+}
+
+.enlace{
+    font-size: 30px ;
+    border-radius: 40px;
+    box-sizing: border-box;
+    border: solid black;
+    text-decoration: none;
+    color: black;
+    background-color: lightgray;
+    padding: 8px;
+    margin-left: 4%;
+}
+#Ob{
+    padding-left:10%;
+    padding-right:10%;
+}
+#Re{
+    padding-left:1.5%;
+    padding-right:1.5%;
+}
+#Rd{
+    padding-left:2.5%;
+    padding-right:2.5%;
+    margin-right:2%;
+}
+#Eo{
+    padding-left:2%;
+    padding-right:2%;
+}
+#Mo{
+    padding-left:1%;
+    padding-right:1%;
+}
+#Sn{
+    padding-left:8%;
+    padding-right:8%;
+}
+#Ce{
+    padding-right: 30px;
+    padding-left: 30px;
+}
+#Cp{
+    margin-left: 4%;
+    padding-left:15px ;
+}
+a:hover{
+    background-color: white;
+}
+

@@ -1,0 +1,36 @@
+body{
+    background-image: url(../Imágenes/Eliminar/Juancho.png);
+    background-repeat: no-repeat;
+    background-size: 144%;
+    text-align: center;
+    font-size: 18px;
+  
+}
+#formulario{
+    margin-top: 10%;
+    background-color: white;
+    border: solid black;
+    padding: 2%;
+    opacity: 75%;
+}
+ul{
+    list-style: none;
+}
+input{
+    text-align: center;
+}
+
+img{
+    width: 7%;
+    height: 14%;
+    opacity: 75%;
+    margin-left: 114%;
+    float: inherit;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+a:hover{
+    color: black;
+}

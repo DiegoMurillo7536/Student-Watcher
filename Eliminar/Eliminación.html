@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eliminación de Registros</title>
+    <link rel="stylesheet" href="../Boostrap/Boostrap/css/bootstrap.css">
+    <link rel="stylesheet" href="Eliminar.css">
+</head>
+<body>
+<div class="container">
+    <a href="../Pagina_Principal/Observador.html"><h1>Eliminación de Observaciones</h1></a>
+   <a href="../Pagina_Principal/Observador.html"> <img src="../Imágenes/Login/Foto_Colegio.png" alt=""></a>
+    <section id="formulario">
+    <p> Por favor,para eliminar la observación de un estudiante, se necesita:
+        <ul>
+          <b> <li>Identificación del docente que hizo la anotación.</li>
+            <li> El número de anotación.</li> </b> 
+        </ul>
+        <p> Si no sabe cuál es el número de anotación,por favor,consultarlo <a href="../Observador/Historial/Muestra.php">aquí</a>.</p>
+        </p>
+
+
+    <form action="Elimina.php" method="post"> 
+        <div class="row">
+            <div class="col-sm-6">
+        <label for="">Identificación del profesor</label> <input type="text" name="Id_Profe" class="form-control input" required>
+    </div>
+        <div class="col-sm-6">
+            <label for="">Número de anotación</label> <input type="number" name="Num_Anot" class="form-control input" required>
+        </div>
+    </div> 
+    
+    <br>
+
+        <button type="submit" class="btn btn-success btn-lg"> Eliminar registro de estudiante</button>
+    
+        
+    </form>
+</section>
+</div>
+</body>
+</html>

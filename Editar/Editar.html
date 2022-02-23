@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar observaciones</title>
+    <link rel="stylesheet" href="../Boostrap/Boostrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../Observador/Observador.css">
+</head>
+<body>
+    
+   <a href="../Pagina_Principal/Observador.html"> <h1>Editor de observaciones</h1></a>
+    <a href="../Pagina_Principal/Observador.html"><img src="../Imágenes/Login/Foto_Colegio.png" alt=""> </a>
+   <section id="aviso">
+    <p>Por favor,para editar una observación,se necesita: 
+      <b><ul>
+        <li>Identificación del docente.</li>
+        <li>Número de anotación.</li>
+    </ul></b> 
+    Si no sabe cuál es el número de anotación,por favor,consultarlo <a href="../Observador/Historial/Muestra.php">aquí</a>. <br> <br>
+    Cabe de recalcar que para evitar inconvenientes sólo se puede cambiar lo siguiente: 
+    <b> <ul>
+        <li>Periodo</li>
+        <li>Inasistencias</li>
+        <li>Cantidad de materias perdidas</li>
+        </b>
+    </ul></b>
+</p>
+</section>
+
+    <section class="container"> 
+ <h2>Editar observación</h2>
+    <form action="Editar.php" method="post">
+        <div class="row">
+            <div class="col-sm-6">
+       <label for="">Identificación</label><input type="text" class="form-control input-sm" name="Codigo_Docente">
+             </div>
+             <div class="col-sm-6">
+       <label for="">Número de anotación</label><input type="text" class="form-control input-sm" name="Num_Anot">
+    </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-4">
+       <label for="">Periodo</label> <input type="number" class="form-control input-sm" name="Periodo">
+    </div>
+    <div class="col-sm-4">
+       <label for="">Inasistencias</label> <input type="number" class="form-control input-sm" name="Inasistencias">
+       </div>
+       <div class="col-sm-4">
+       <label for="">Materias perdidas</label> <input type="number" class="form-control input-sm" name="Materias">
+    </div>
+    </div>
+ <br>
+    <button type="submit"  class="btn btn-success btn-lg">Editar observación</button>
+    </section>
+
+
+
+
+
+    </form>
+</body>
+</html>

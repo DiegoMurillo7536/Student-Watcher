@@ -1,0 +1,27 @@
+#cuerpo{
+    text-align: center;
+    background-image: url(../Imágenes/Registro/Colegio_2.jpg);
+    background-repeat: no-repeat;
+   background-size: 130%;
+   color: black;  
+}
+
+
+article{
+    background-color: lightskyblue;
+    border: black solid;
+    padding: 2%;
+    opacity: 80%;
+    border-radius: 10px;
+}
+
+input{
+    text-align: center;
+}
+img{
+    width: 7%;
+    height: 14%;
+    opacity: 75%;
+    margin-left: 90%;
+    float: inherit;
+}

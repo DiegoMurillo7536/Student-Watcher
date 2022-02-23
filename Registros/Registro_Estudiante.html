@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Boostrap/Boostrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../Registros/Estilo_Registros.css" type="">
+    <title>Registro del estudiante</title>
+</head>
+<body id="cuerpo">
+    <a href="../Pagina_Principal/Observador.html"><img src="../Imágenes/Login/Foto_Colegio.png"></a>
+    <header><h1>Registro de estudiantes </h1></header> <br>
+<section>
+    <form action="Registro_Estudiante.php" method="POST">   
+        <!-- Datos Básicos del estudiante-->    
+<article class="container">
+    <div class="row">
+        <h2> Datos Básicos del estudiante</h2> <br>
+    </div>
+     <div class="row">
+        <div class="col-sm-4 mx-auto">
+       <label for="">Identificacion</label> 
+       <input type="text" name="Identificacion" class="form-control input-sm">
+    </div>
+
+    <div class="col-sm-4  mx-auto">
+       <label for="">Primer Nombre</label>
+       <input type="text" name="Nom1" class="form-control input-sm">
+    </div>
+
+    <div class="col-sm-3 mx-auto">
+       <label for="">Segundo nombre</label>
+        <input type="text"name="Nom2" class="form-control input-sm"> 
+    </div>
+    </div>
+    <br>
+    <div class="row">
+    <div class="col-sm-4 mx-auto">
+       <label for="">Primer apellido</label> <input type="text"name="Ape1"class="form-control input-sm">
+    </div>
+    <div class="col-sm-4 mx-auto ">
+       <label for="">Segundo apellido</label><input type="text"name="Ape2" class="form-control input-sm"> 
+    </div>
+    <div class="col-sm-3 mx-auto ">
+        <label for="">Tipo de RH</label> <input type="text"name="RH" class="form-control input-sm">
+     </div>
+     </div>
+    <div class="row">
+    <div class="col-sm-4 mx-auto">
+       Fecha de Nacimiento<input type="date" name="Nacimiento" class="form-control input-sm"> 
+    </div>
+    
+    <div class="col-sm-4 mx-auto" >
+       Foto del estudiante<input type="file" name="foto" class="form-control input-sm">
+    </div>
+    </div>
+  </article>
+<br>
+ <!-- Datos Complementarios del estudiante--> 
+    <article class="container">
+        
+        <h2>Datos complementarios del estudiante</h2>
+        <div class="row">
+            <div class="col-sm-4">
+            <label for="">Ubicación</label>
+        <input type="text" name="Ubicacion" class="form-control input-sm">
+    </div>
+    
+
+    
+        <div class="col-sm-3 mx-auto ">
+        <label for="">Fecha de expedición del documento</label> <input type="date" name="Exp_Doc" class="form-control input-sm">
+    </div>
+        <div class="col-sm-4"> 
+       <label for="">Ciudad de Nacimiento</label> <input type="text" name="Ciudad_Nacimiento" class="form-control input-sm">
+    </div>
+
+</div>
+    
+
+    <div class="row">
+        <div class="col-sm-2 mx-auto"> 
+        <label for="">EPS</label><input type="text" name="EPS" class="form-control input-sm">
+    </div>
+
+    <div class="col-sm-2 mx-auto">
+        <label for="">Barrio</label> <input type="text" name="Barrio" class="form-control input-sm">
+    </div>
+       
+    <div class="col-sm-2 mx-auto">
+        Estrato: <input type="number" name="Estrato" class="form-control input-sm">
+    </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-2 mx-auto ">
+        <label for="">Localidad</label> <input type="text" name="Localidad" class="form-control input-sm">
+    </div>
+
+    <div class="col-sm-2 mx-auto">
+
+        <label for="">Telefono</label> <input type="text" name="Telefono" class="form-control input-sm">
+    </div>
+
+    <div class="col-sm-2 mx-auto">
+
+        ¿Tiene ruta?: <input type="text" name="Ruta" class="form-control input-sm">
+    </div>
+
+    </div>
+    </article>
+    <br>
+    
+    <br>
+     <!-- Curso del estudiante--> 
+    <article class="container"> 
+        <h2>Curso</h2>
+        <div class="col-sm-2 mx-auto">
+         <input type="number" name="Curso" class="form-control input-sm" required>
+        </div>
+    </article>
+    <br>
+     <button type="submit" class="btn btn-primary btn-lg">Finalizar Registro</button> <br>
+</form>
+</section>
+    
+
+</body>
+</html>
