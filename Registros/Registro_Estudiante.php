@@ -32,6 +32,8 @@ VALUES ('[value-1]','[value-2]','[value-3]','[value-4]','[value-5]','[value-6]',
 $datos_basicos="INSERT INTO `datos_basicos_estudiante`(`Identificacion`, `Ape1`, `Ape2`, `Nom1`, `Nom2`, `RH`, `Fecha_Nac`,`foto`,Id_Curso) 
 VALUES ('$Id_Estudiante','$Ape1_Estudiante','$Ape2_Estudiante','$Nom1_Estudiante','$Nom2_Estudiante','$RH','$Fecha_Nacimiento','$Foto','$Curso')";
 
+
+
 $datos_complemtarios="INSERT INTO `datos_complementarios_estudiante`(`Id_Estudiante`, `Ubicacion`, `Fecha_Exp_Doc`, `Ciudad_Nac`, `Ruta`, `EPS`, `Barrio`, `Telefono`, `Estrato`, `Localidad`) VALUES
  ('$Id_Estudiante','$Ubicacion','$Exp_Doc','$Ciudad_Nacimiento','$Ruta','$EPS','$Barrio','$Telefono','$Estrato','$Localidad')";
 
@@ -39,7 +41,7 @@ $resultado= mysqli_query($conexion ,$datos_basicos);
 $resultado2=mysqli_query($conexion , $datos_complemtarios);
 
 
-if ($resultado) {
+if ($resultado && $resultado2) {
     header("location:http://localhost/dashboard/Archivos/Proyecto/Pagina_Principal/Observador.html");
 } else{
  echo mysqli_error($resultado);

@@ -1,7 +1,6 @@
 <?php
 
 $conexion=mysqli_connect("localhost","root","","base_colegio");
-include("Registro_Estudiante.php");
 $Identificacion_Acudiente=$_POST['Identificacion_Acudiente'];
 $Noma1=$_POST['Noma1'];
 $Noma2=$_POST['Noma2'];
@@ -11,6 +10,7 @@ $Parentezco=$_POST['Parentezco'];
 $Celular=$_POST['Celular'];
 $Email=$_POST['Email'];
 $Firma=$_POST['Firma'];
+$Id_Estudiante= $_POST['Id_Estudiante'];
 
 
 $sql="INSERT INTO `acudientes`(`Id_Estudiante`, `Identificacion`, `Ape1`, `Ape2`, `Nom1`, `Nom2`, `Parentezco`, `Celular`, `Firma`, `Email`) 
