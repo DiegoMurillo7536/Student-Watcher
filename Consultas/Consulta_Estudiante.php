@@ -18,10 +18,10 @@ while($registro=mysqli_fetch_array($resultado)){
        </tr>
        <tr>
            <td><?php echo $registro['Identificacion'] ?></td>
-           <td><?php echo $registro['Primer_Apellido'] ?></td> 
-           <td><?php echo $registro['Segundo_Apellido'] ?></td> 
-           <td><?php echo $registro['Primer_Nombre'] ?></td> 
-           <td><?php echo $registro['Segundo_Nombre'] ?></td> 
+           <td><?php echo $registro['Ape1'] ?></td> 
+           <td><?php echo $registro['Ape2'] ?></td> 
+           <td><?php echo $registro['Nom1'] ?></td> 
+           <td><?php echo $registro['Nom2'] ?></td> 
            <td><?php echo $registro['Id_Curso'] ?></td>
        </tr>
        <?php
